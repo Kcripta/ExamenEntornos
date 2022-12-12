@@ -35,7 +35,15 @@ public class Main {
                     k=sc.nextDouble();
                     System.out.println("Cuanto mide la hipotenusa del cono?");
                     l=sc.nextDouble();
-                    areac=3.14*k*(k+l);
+                    areac=(3.14*k*l)+(3.14*(k*k));
+                    System.out.println("El area del cono es "+areac);
+                    break;
+                case 4:
+                    System.out.println("Cuanto mide el radio del cilindro?");
+                    k=sc.nextDouble();
+                    System.out.println("Cuanto mide la altura del cilindro?");
+                    l=sc.nextDouble();
+                    areac=2*k*3.14*(l+k);
                     System.out.println("El area del cono es "+areac);
                     break;
 
