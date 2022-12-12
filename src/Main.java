@@ -5,13 +5,14 @@ public class Main {
         int opc=0,i,j,area;
         double k,l,areac;
         System.out.println("Hello world!");
-        while(!(opc==5)) {
+        while(!(opc==6)) {
             System.out.println("----------Menu-----------" +
                     "\n1.Area triangulo" +
                     "\n2.Area circulo" +
                     "\n3.Area del cono" +
                     "\n4.Area del cilindro" +
-                    "\n5.Salir");
+                    "\n5.Volumen esfera" +
+                    "\n6.Salir");
             System.out.println("-------------------------");
             opc = sc.nextInt();
             switch (opc)
@@ -44,10 +45,16 @@ public class Main {
                     System.out.println("Cuanto mide la altura del cilindro?");
                     l=sc.nextDouble();
                     areac=2*k*3.14*(l+k);
-                    System.out.println("El area del cono es "+areac);
+                    System.out.println("El area del cilindro es "+areac);
+                    break;
+                case 5:
+                    System.out.println("Cuanto mide el radio del cilindro?");
+                    k=sc.nextDouble();
+                    areac=(4/3)*(3.14)*(k*k*k);
+                    System.out.println("El volumen del esfera es "+areac);
                     break;
 
             }
-        }
+        }System.out.println("Hasta la proxima");
     }
 }
