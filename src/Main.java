@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int opc=0,i,j,area;
+        double k,areac;
         System.out.println("Hello world!");
         while(!(opc==5)) {
             System.out.println("----------Menu-----------" +
@@ -23,6 +24,13 @@ public class Main {
                     area=i*j;
                     System.out.println("El area del tringulo es "+area);
                     break;
+                case 2:
+                    System.out.println("Cuanto mide el radio del circulo?");
+                    k=sc.nextDouble();
+                    areac=(k*k)*(3.14);
+                    System.out.println("El area del tringulo es "+areac);
+                    break;
+
             }
         }
     }
